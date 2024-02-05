@@ -1,196 +1,374 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="./css/app.css">
-</head>
-<body>
-  <div class="app" >
-      <nav id="myNavbar" class="navbar navbar-expand-lg bg-transparent fixed-top py-3">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/app.css" />
+  </head>
+  <body>
+    <div class="app">
+      <nav
+        id="myNavbar"
+        style="transition: 0.5s"
+        class="navbar navbar-expand-lg fixed-top py-3"
+      >
         <div class="container">
-          <a class="navbar-brand fw-bolder text-white" href="#">Start Bootstrap</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <a class="navbar-brand fw-bolder text-white" href="#"
+            >Start Bootstrap</a
+          >
+          <button
+          id="navBtn"
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link  text-white ms-4 fw-semibold" href="#about">About</a>
+                <a class="nav-link text-white ms-4 fw-semibold" href="#about"
+                  >About</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white ms-4 fw-semibold" href="#project">Project</a>
+                <a class="nav-link text-white ms-4 fw-semibold" href="#project"
+                  >Project</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white ms-4 fw-semibold" href="#contact">Contact</a>
+                <a class="nav-link text-white ms-4 fw-semibold" href="#contact"
+                  >Contact</a
+                >
+              </li>
+              <li class="nav-item">
+                <button
+                  id="registerBtn"
+                  type="button"
+                  class="btn btn-outline-secondary text-white ms-3"
+                >
+                  Create acc
+                </button>
+              </li>
+              <li class="nav-item">
+                <p
+                id="userId"
+                  class="nav-link text-warning ms-4 fw-semibold"
+                  >
+                </p>
               </li>
             </ul>
           </div>
         </div>
       </nav>
 
-    <section class="hero" >
-      <div class="container-fluid vh-100 bg-danger-subtle hero-img " >
-        <div class="row h-100">
-          <div class="d-flex justify-content-center pt-8">
-            <div class="">
-              <h1 class="text-style animate__animated animate__fadeInDownBig">GRAYSCALE</h1>
-              <p class="hero-para text-center text-white-50 animate__animated animate__fadeInDownBig">
-                A free, responsive, one page Bootstrap theme <br> created by Start Bootstrap.
-              </p>
-              <div class="text-center mt-5 animate__animated animate__fadeInUpBig">
-                <button class="btn-style btn  rounded-3 text-white fw-lighter ls-2">Get Started</button>
+      <div
+        class="rounded-5 overflow-hidden shadow-lg animate__animated register-form"
+        id="registerForm"
+      >
+        <div id="loginForm" class="py-5 login-form">
+          <form action="" id="createLoginForm">
+            <div class="text-center">
+              <h2 class="text-white">Login</h2>
+            </div>
+            <div class="py-4">
+              <div class="w-75 mx-auto mb-4">
+                <label class="form-label text-white" for=""
+                  >Enter Your Email</label
+                >
+                <input id="loginEmail" class="form-control" type="email" />
+              </div>
+              <div class="w-75 mx-auto">
+                <label class="form-label text-white" for=""
+                  >Enter Your Password</label
+                >
+                <input id="loginPassword" class="form-control" type="password" />
+              </div>
+            </div>
+            <div class="text-center mb-4">
+              <a class="" href="#">Forget Password?</a>
+            </div>
+            <div class="text-center">
+              <button class="login-btn">Login</button>
+            </div>
+            <div class="d-flex justify-content-center">
+              <p class="text-white me-2">Don't have an account?</p>
+              <a type="button" id="changeToSign" href="#">Sign In</a>
+            </div>
+          </form>
+        </div>
+        <div id="signUpForm" class="py-4 sign-up-form">
+          <form action="" id="createSignupForm">
+            <div class="text-center">
+              <h2 class="text-white">Sign up</h2>
+            </div>
+            <div class="py-3">
+              <div class="w-75 mx-auto mb-3">
+                <label class="form-label text-white" for=""
+                  >Enter Your Name</label
+                >
+                <input class="form-control" type="text" name="signName" />
+              </div>
+              <div class="w-75 mx-auto mb-3">
+                <label class="form-label text-white" for=""
+                  >Enter Your Email</label
+                >
+                <input class="form-control" type="email" name="signEmail" />
+              </div>
+              <div class="w-75 mx-auto">
+                <label class="form-label text-white" for=""
+                  >Enter Your Password</label
+                >
+                <input
+                  class="form-control"
+                  type="password"
+                  name="signPassword"
+                />
+              </div>
+            </div>
+            <div class="text-center">
+              <button class="login-btn">Sign Up</button>
+            </div>
+            <div class="d-flex justify-content-center">
+              <p class="me-2 text-white">Have already account?</p>
+              <a type="button" id="changeToLog" href="#">Login</a>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <section id="heroSection" class="hero">
+        <div class="container-fluid vh-100 bg-danger-subtle hero-img">
+          <div class="row h-100">
+            <div class="d-flex justify-content-center pt-8">
+              <div class="">
+                <h1 class="text-style animate__animated animate__fadeInDownBig">
+                  GRAYSCALE
+                </h1>
+                <p
+                  class="hero-para text-center text-white-50 animate__animated animate__fadeInDownBig"
+                >
+                  A free, responsive, one page Bootstrap theme <br />
+                  created by Start Bootstrap.
+                </p>
+                <div
+                  class="text-center mt-5 animate__animated animate__fadeInUpBig"
+                >
+                  <button
+                    class="btn-style btn rounded-3 text-white fw-lighter ls-2"
+                  >
+                    Get Started
+                  </button>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section id="about" class="section-1">
-      <div class="container-fluid pt-4 pt-md-7 section-1-bg text-white">
-        <div class="container ">
-          <div class="row justify-content-center">
-            <div data-aos="fade-down" class="col-md-8 mb-5">
-              <h3 class="fw-light ls-2 mb-4 text-center">Built with Bootstrap 5</h3>
-              <p class=" text-center text-white-50">
-                Grayscale is a free Bootstrap theme created by Start Bootstrap. It can be yours <br class="d-none d-md-block"> right now, simply download the template on <a class="preview-hov" href="#">the preview page</a>. The theme is open <br class="d-none d-md-block"> source, and you can use it for any purpose, personal or commercial.
+      <section id="about" class="section-1">
+        <div class="container-fluid pt-4 pt-md-7 section-1-bg text-white">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div data-aos="fade-down" class="col-md-8 mb-5">
+                <h3 class="fw-light ls-2 mb-4 text-center">
+                  Built with Bootstrap 5
+                </h3>
+                <p class="text-center text-white-50">
+                  Grayscale is a free Bootstrap theme created by Start
+                  Bootstrap. It can be yours <br class="d-none d-md-block" />
+                  right now, simply download the template on
+                  <a class="preview-hov" href="#">the preview page</a>. The
+                  theme is open <br class="d-none d-md-block" />
+                  source, and you can use it for any purpose, personal or
+                  commercial.
+                </p>
+              </div>
+              <img
+                data-aos="fade-up"
+                class="w-100"
+                src="./assets/img/ipad.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="project" class="section-2">
+        <div class="container pt-7 mb-7 section-2-bg">
+          <div class="row mb-5">
+            <div class="col-md-8 p-0 mb-5 mb-md-0">
+              <img
+                data-aos="fade-right"
+                src="./assets/img/bg-masthead.jpg"
+                class="w-100"
+                alt=""
+              />
+            </div>
+            <div class="col-md-4 p-0 my-auto">
+              <div data-aos="fade-right" class="bs-3">
+                <h5 class="text-center fw-light ls-2">Shoreline</h5>
+                <p class="text-center text-black-50 px-3">
+                  Grayscale is open source and MIT licensed. This means you can
+                  use it for any project - even commercial projects! Download
+                  it, customize it, and publish your website!
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="row mb-5 mb-md-0">
+            <div class="col-md-6 p-0">
+              <img
+                data-aos="fade-down"
+                class="w-100"
+                src="./assets/img/demo-image-01.jpg"
+                alt=""
+              />
+            </div>
+            <div
+              data-aos="fade-down"
+              class="col-md-6 py-4 p-md-0 bg-black d-flex flex-column justify-content-center align-items-center"
+            >
+              <h5 class="text-white">Misty</h5>
+              <p class="text-white-50 px-5 text-center">
+                An example of where you can put an image of a project, or
+                anything else, along with a description.
               </p>
             </div>
-            <img data-aos="fade-up" class="w-100" src="./assets/img/ipad.png" alt="">
           </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="project" class="section-2">
-      <div class="container pt-7 mb-7 section-2-bg">
-        <div class="row mb-5">
-          <div  class="col-md-8 p-0 mb-5 mb-md-0">
-            <img data-aos="fade-right" src="./assets/img/bg-masthead.jpg" class="w-100" alt="">
-          </div>
-          <div class="col-md-4 p-0 my-auto">
-            <div data-aos="fade-right" class="bs-3">
-              <h5 class="text-center fw-light ls-2">Shoreline</h5>
-              <p class="text-center text-black-50 px-3">
-                Grayscale is open source and MIT licensed. This means you can use it for any project - even commercial projects! Download it, customize it, and publish your website!
+          <div class="row flex-row-reverse">
+            <div class="col-md-6 p-0">
+              <img
+                data-aos="fade-up"
+                class="w-100"
+                src="./assets/img/demo-image-02.jpg"
+                alt=""
+              />
+            </div>
+            <div
+              data-aos="fade-up"
+              class="col-md-6 py-4 p-md-0 bg-black d-flex flex-column justify-content-center align-items-center"
+            >
+              <h5 class="text-white">Mountains</h5>
+              <p class="text-white-50 px-5 text-center">
+                Another example of a project with its respective description.
+                These sections work well responsively as well!
               </p>
             </div>
           </div>
         </div>
-        <div class="row mb-5 mb-md-0">
-          <div class="col-md-6 p-0">
-            <img data-aos="fade-down" class="w-100" src="./assets/img/demo-image-01.jpg" alt="">
-          </div>
-          <div data-aos="fade-down" class="col-md-6 py-4 p-md-0 bg-black d-flex flex-column justify-content-center align-items-center">
-            <h5 class="text-white">Misty</h5>
-            <p class="text-white-50 px-5 text-center">
-              An example of where you can put an image of a project, or anything else, along with a description.
-            </p>
-          </div>
-        </div>
-        <div class="row flex-row-reverse">
-          <div class="col-md-6 p-0">
-            <img data-aos="fade-up" class="w-100" src="./assets/img/demo-image-02.jpg" alt="">
-          </div>
-          <div data-aos="fade-up" class="col-md-6 py-4 p-md-0 bg-black d-flex flex-column justify-content-center align-items-center">
-            <h5 class="text-white">Mountains</h5>
-            <p class="text-white-50 px-5 text-center">
-              Another example of a project with its respective description. These sections work well responsively as well!
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
+      </section>
 
-    <section id="contact" class="section-3">
-      <div class="container-fluid section-3-bg ">
-        <div class="row h-100 justify-content-center align-items-center">
-          <div class="col-10">
-            <div data-aos="fade-up" class="text-center mb-5">
-              <i class="bi bi-telegram fs-1 text-white mb-3"></i>
-              <h3 class="ls-2 fw-light text-white">Subscribe to receive updates!</h3>
-            </div>
+      <section id="contact" class="section-3">
+        <div class="container-fluid section-3-bg">
+          <div class="row h-100 justify-content-center align-items-center">
+            <div class="col-10">
+              <div data-aos="fade-up" class="text-center mb-5">
+                <i class="bi bi-telegram fs-1 text-white mb-3"></i>
+                <h3 class="ls-2 fw-light text-white">
+                  Subscribe to receive updates!
+                </h3>
+              </div>
               <form data-aos="fade-up" action="#">
                 <div class="col-12 d-md-flex justify-content-md-center">
                   <div class="col-md-5 col-12 me-3 mb-4 mb-md-0">
-                    <input class="w-100 ls-2 email-input form-control px-4 py-3" type="text" placeholder="ENTER EMAIL ADDRESS...">
+                    <input
+                      class="w-100 ls-2 email-input form-control px-4 py-3"
+                      type="text"
+                      placeholder="ENTER EMAIL ADDRESS..."
+                    />
                   </div>
                   <div class="col-md-2 col-6 mx-auto mx-md-0">
-                    <button class="btn px-4 py-2 px-md-0 py-md-0 btn-info text-white-50 w-100 h-100 rounded-2 ">
+                    <button
+                      class="btn px-4 py-2 px-md-0 py-md-0 btn-info text-white-50 w-100 h-100 rounded-2"
+                    >
                       NOTIFY! ME
                     </button>
                   </div>
                 </div>
               </form>
-
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section-4">
-      <div class="container-fluid bg-black">
-        <div class="container ">
-          <div class="row mb-6">
-            <div data-aos="fade-up" class="col-md-4 mt-7 text-center">
-              <div class="bg-white foot-bs rounded-3 py-4">
-                <i class="fa-solid fa-map-location-dot mb-2 text-info"></i>
-              <h6 class="ls-2 fw-lighter mb-4">ADDRESS</h6>
-              <div class="col-3 border border-2 border-info mx-auto mb-4"></div>
-              <p class="text-black-50">
-                4923 Market Street, Orlando FL
-              </p>
-              </div>
-            </div>
-            <div data-aos="fade-down" class="col-md-4 mt-md-7 mt-4 text-center">
-              <div class="bg-white foot-bs rounded-3 py-4">
-                <i class="fa-solid fa-envelope mb-2 text-info"></i>
-              <h6 class="ls-2 fw-lighter mb-4">EMAIL</h6>
-              <div class="col-3 border border-2 border-info mx-auto mb-4"></div>
-              <a href="#" class="text-black-50">hello@yourdomain.com</a>
-              </div>
-            </div>
-            <div data-aos="fade-up" class="col-md-4  mt-md-7 mt-4 text-center">
-              <div class="bg-white foot-bs rounded-3 py-4">
-                <i class="fa-solid fa-mobile-screen mb-2 text-info"></i>
-              <h6 class="ls-2 fw-lighter mb-4">PHONE</h6>
-              <div class="col-3 border border-2 border-info mx-auto mb-4"></div>
-              <p class="text-black-50">
-                +1 (555) 902-8832
-              </p>
-              </div>
-            </div>
-          </div>
-          <div class="row justify-content-center">
-            <div class="col-6">
-              <div class="d-flex justify-content-center mb-4">
-                <div class="">
-                  <i data-aos="fade-up" class="fa-brands fa-twitter  icon-bg"></i>
-                </div>
-                <div class="mx-4">
-                  <i data-aos="fade-up" class="fa-brands fa-facebook-f icon-bg"></i>
-                </div>
-                <div class="">
-                  <i data-aos="fade-up" class="fa-brands fa-github  icon-bg"></i>
-                </div>
-              </div>
-              <div class="text-center mb-6">
-                <p class="text-white-50">
-                  Copyright © Your Website 2023
-                </p>
-              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
+      <section class="section-4">
+        <div class="container-fluid bg-black">
+          <div class="container">
+            <div class="row mb-6">
+              <div data-aos="fade-up" class="col-md-4 mt-7 text-center">
+                <div class="bg-white foot-bs rounded-3 py-4">
+                  <i class="fa-solid fa-map-location-dot mb-2 text-info"></i>
+                  <h6 class="ls-2 fw-lighter mb-4">ADDRESS</h6>
+                  <div
+                    class="col-3 border border-2 border-info mx-auto mb-4"
+                  ></div>
+                  <p class="text-black-50">4923 Market Street, Orlando FL</p>
+                </div>
+              </div>
+              <div
+                data-aos="fade-down"
+                class="col-md-4 mt-md-7 mt-4 text-center"
+              >
+                <div class="bg-white foot-bs rounded-3 py-4">
+                  <i class="fa-solid fa-envelope mb-2 text-info"></i>
+                  <h6 class="ls-2 fw-lighter mb-4">EMAIL</h6>
+                  <div
+                    class="col-3 border border-2 border-info mx-auto mb-4"
+                  ></div>
+                  <a href="#" class="text-black-50">hello@yourdomain.com</a>
+                </div>
+              </div>
+              <div data-aos="fade-up" class="col-md-4 mt-md-7 mt-4 text-center">
+                <div class="bg-white foot-bs rounded-3 py-4">
+                  <i class="fa-solid fa-mobile-screen mb-2 text-info"></i>
+                  <h6 class="ls-2 fw-lighter mb-4">PHONE</h6>
+                  <div
+                    class="col-3 border border-2 border-info mx-auto mb-4"
+                  ></div>
+                  <p class="text-black-50">+1 (555) 902-8832</p>
+                </div>
+              </div>
+            </div>
+            <div class="row justify-content-center">
+              <div class="col-6">
+                <div class="d-flex justify-content-center mb-4">
+                  <div class="">
+                    <i
+                      data-aos="fade-up"
+                      class="fa-brands fa-twitter icon-bg"
+                    ></i>
+                  </div>
+                  <div class="mx-4">
+                    <i
+                      data-aos="fade-up"
+                      class="fa-brands fa-facebook-f icon-bg"
+                    ></i>
+                  </div>
+                  <div class="">
+                    <i
+                      data-aos="fade-up"
+                      class="fa-brands fa-github icon-bg"
+                    ></i>
+                  </div>
+                </div>
+                <div class="text-center mb-6">
+                  <p class="text-white-50">Copyright © Your Website 2023</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
 
-  </div>
-
-  <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-  <script src="./main.js" type="module"></script>
-</body>
+    <!-- <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script> -->
+    <script src="./main.js" type="module"></script>
+  </body>
 </html>
