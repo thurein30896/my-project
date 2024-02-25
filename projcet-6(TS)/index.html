@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body class="overflow-x-hidden">
+    <div id="app">
+      <nav class="">
+        <div
+          class="p-5 max-w-7xl flex items-center justify-between mx-auto lg:bg-transparent bg-white"
+        >
+          <div class="">
+            <img src="./images/logo.svg" alt="" />
+          </div>
+
+          <div
+            class="lg:relative  absolute lg:w-auto w-full top-[70px] left-0 lg:top-0 duration-1000"
+          >
+            <ul
+              id="navMenu"
+              class="hidden lg:flex lg:items-center lg:gap-8 bg-white lg:bg-transparent space-y-3 lg:space-y-0 py-5 lg:py-0 select-none"
+            >
+              <li class="text-center  active py-2 hover:text-red-700 font-medium ">
+                <a  href="index.html">Home</a>
+              </li>
+              <li class="text-center  py-2 hover:text-red-700 font-medium">
+                <a href="#">About</a>
+              </li>
+              <li class="text-center  py-2 hover:text-red-700 font-medium">
+                <a href="#">Blog</a>
+              </li>
+              <li class="text-center  py-2 hover:text-red-700 font-medium">
+                <a href="#">Features</a>
+              </li>
+              <li class="text-center  py-2 hover:text-red-700 font-medium">
+                <a href="#">How it works</a>
+              </li>
+              <li
+                class="group relative text-center  py-2 hover:text-red-700 font-medium lg:text-start cursor-pointer"
+              >
+                <span class="flex items-center w-fit mx-auto gap-1">
+                  Pages
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-3 h-3"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="m19.5 8.25-7.5 7.5-7.5-7.5"
+                    />
+                  </svg>
+                </span>
+                <ul
+                  class="relative mt-3 lg:absolute z-10 tracking-tighter font-semibold text-sm rounded-md lg:border lg:border-red-300 w-full bg-pink-50 space-y-3 lg:space-y-2 lg:bg-white lg:min-w-[180px] px-4 py-3 group-hover:block shadow hidden select-none"
+                >
+                  <li class="mb-1 text-black">
+                    <a href="#">Career</a>
+                  </li>
+                  <li class="mb-1 text-black">
+                    <a href="#">Career Single</a>
+                  </li>
+                  <li class="mb-1 text-black">
+                    <a href="#">Integration</a>
+                  </li>
+                  <li class="mb-1 text-black">
+                    <a href="#">Integration Single</a>
+                  </li>
+                  <li class="mb-1 text-black">
+                    <a href="#">Pricing</a>
+                  </li>
+                  <li class="mb-1 text-black">
+                    <a href="#">Changelogs</a>
+                  </li>
+                  <li class="mb-1 text-black">
+                    <a href="#">Terms & Conditions</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="text-center  py-2 hover:text-red-700 font-medium">
+                <a href="#">Contact</a>
+              </li>
+              <li class="lg:hidden block text-center">
+                <button
+                  class="bg-white px-7 py-3 rounded-full font-semibold text-sm border shadow-md"
+                >
+                  Sing Up Now
+                </button>
+              </li>
+            </ul>
+          </div>
+          <div class="hidden lg:block">
+            <button
+              class="bg-white px-7 py-3 rounded-full font-semibold text-sm shadow-xl hover:shadow-md"
+            >
+              Sign Up Now
+            </button>
+          </div>
+
+          <div class="lg:hidden md:block cursor-pointer select-none">
+            <div id="navOpen">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-9 h-9 pointer-events-none stroke-2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                />
+              </svg>
+            </div>
+            <div id="navClose" class="hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-9 h-9 stroke-2 pointer-events-none"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M6 18 18 6M6 6l12 12"
+                />
+              </svg>
+            </div>
+          </div>
+
+          <img
+            class="absolute -right-12 -top-24 -z-[1]"
+            src="./images/banner-shape.svg"
+            alt=""
+          />
+        </div>
+      </nav>
+
+      <section id="hero" class="">
+        <div
+          class="lg:flex lg:h-[550px] max-w-7xl items-center mx-auto md:px-10 px-5"
+        >
+          <div class="w-full lg:w-1/2 mt-16 lg:mt-0">
+            <h1
+              class="md:text-5xl text-4xl font-serif md:leading-[65px]"
+              style="font-weight: 700"
+            >
+              Scale design & dev operations with <br />
+              Avocode Enterprise
+            </h1>
+            <p class="text-md text-slate-500 my-7">
+              A fully integrated suite of authentication & authoriz products,
+              Stytch’s platform removes the headache of.
+            </p>
+            <button
+              class="bg-white rounded-full font-semibold text-sm px-8 py-3 shadow-xl hover:shadow-md"
+            >
+              Download The Theme
+            </button>
+          </div>
+          <div class="w-full lg:w-1/2 p-5">
+            <img class="w-full" src="./images/banner-img.png" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <section id="highlighting" class="relative">
+        <img
+          class="absolute left-0 top-0 -z-[1] -translate-y-1/2"
+          src="./images/icons/feature-shape.svg"
+          alt=""
+        />
+        <div class="py-12">
+          <div
+            class="lg:flex justify-between items-start max-w-7xl mx-auto px-5 mb-5"
+          >
+            <div class="lg:w-[40%] lg:text-start text-center lg:mb-0 mb-5">
+              <h1
+                class="lg:text-4xl text-3xl font-bold font-serif leading-[50px]"
+              >
+                The Highlighting Part Of Our Solution
+              </h1>
+            </div>
+            <div class="lg:w-[40%] lg:text-start text-center">
+              <p class="text-slate-500 font-medium">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+                egestas Werat viverra id et aliquet. vulputate egestas
+                sollicitudin .
+              </p>
+            </div>
+          </div>
+          <div
+            class="max-w-7xl mx-auto p-5 grid md:grid-cols-3 lg:grid-cols-4 sm:grid-cols-2 gap-8"
+          >
+            <div class="p-5 space-y-4 rounded-lg bg-white shadow-md">
+              <h3 class="font-serif text-2xl font-semibold">Live Caption</h3>
+              <p class="text-slate-500 text-sm">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              </p>
+              <img
+                class="w-6 h-6"
+                src="./images/icons/feature-icon-1.svg"
+                alt=""
+              />
+            </div>
+            <div class="p-5 space-y-4 rounded-lg bg-white shadow-md">
+              <h3 class="font-serif text-2xl font-semibold">Smart Reply</h3>
+              <p class="text-slate-500 text-sm">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              </p>
+              <img
+                class="w-6 h-6"
+                src="./images/icons/feature-icon-2.svg"
+                alt=""
+              />
+            </div>
+            <div class="p-5 space-y-4 rounded-lg bg-white shadow-md">
+              <h3 class="font-serif text-2xl font-semibold">Sound Amplifier</h3>
+              <p class="text-slate-500 text-sm">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              </p>
+              <img
+                class="w-6 h-6"
+                src="./images/icons/feature-icon-3.svg"
+                alt=""
+              />
+            </div>
+            <div class="p-5 space-y-4 rounded-lg bg-white shadow-md">
+              <h3 class="font-serif text-2xl font-semibold">
+                Gesture Navigation
+              </h3>
+              <p class="text-slate-500 text-sm">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              </p>
+              <img
+                class="w-6 h-6"
+                src="./images/icons/feature-icon-4.svg"
+                alt=""
+              />
+            </div>
+            <div class="p-5 space-y-4 rounded-lg bg-white shadow-md">
+              <h3 class="font-serif text-2xl font-semibold">Dark Theme</h3>
+              <p class="text-slate-500 text-sm">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              </p>
+              <img
+                class="w-6 h-6"
+                src="./images/icons/feature-icon-5.svg"
+                alt=""
+              />
+            </div>
+            <div class="p-5 space-y-4 rounded-lg bg-white shadow-md">
+              <h3 class="font-serif text-2xl font-semibold">
+                Privacy Controls
+              </h3>
+              <p class="text-slate-500 text-sm">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              </p>
+              <img
+                class="w-6 h-6"
+                src="./images/icons/feature-icon-6.svg"
+                alt=""
+              />
+            </div>
+            <div class="p-5 space-y-4 rounded-lg bg-white shadow-md">
+              <h3 class="font-serif text-2xl font-semibold">
+                Location Controls
+              </h3>
+              <p class="text-slate-500 text-sm">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              </p>
+              <img
+                class="w-6 h-6"
+                src="./images/icons/feature-icon-7.svg"
+                alt=""
+              />
+            </div>
+            <div class="p-5 space-y-4 rounded-lg bg-white shadow-md">
+              <h3 class="font-serif text-2xl font-semibold">
+                Security Updates
+              </h3>
+              <p class="text-slate-500 text-sm">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              </p>
+              <img
+                class="w-6 h-6"
+                src="./images/icons/feature-icon-8.svg"
+                alt=""
+              />
+            </div>
+            <div class="p-5 space-y-4 rounded-lg bg-white shadow-md">
+              <h3 class="font-serif text-2xl font-semibold">Focus Mode</h3>
+              <p class="text-slate-500 text-sm">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              </p>
+              <img
+                class="w-6 h-6"
+                src="./images/icons/feature-icon-9.svg"
+                alt=""
+              />
+            </div>
+            <div class="p-5 space-y-4 rounded-lg bg-white shadow-md">
+              <h3 class="font-serif text-2xl font-semibold">Family Link</h3>
+              <p class="text-slate-500 text-sm">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              </p>
+              <img
+                class="w-6 h-6"
+                src="./images/icons/feature-icon-10.svg"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="max-w-7xl mx-auto px-5 py-10">
+          <div class="lg:flex flex-row-reverse">
+            <div
+              class="lg:w-[60%] flex justify-center items-center px-5 relative"
+            >
+              <img
+                id="tabImg1"
+                class="w-full hidden h-auto"
+                src="./images/collaboration.png"
+                alt=""
+              />
+              <img
+                id="tabImg2"
+                class="w-full h-auto"
+                src="./images/sells-by-country.png"
+                alt=""
+              />
+              <img
+                id="tabImg3"
+                class="w-full hidden h-auto"
+                src="./images/banner-img.png"
+                alt=""
+              />
+            </div>
+            <div class="lg:w-[40%] px-5 py-8">
+              <h1
+                class="lg:text-4xl text-2xl font-serif tracking-wider font-bold"
+              >
+                Prevent failure from to impacting your reputation
+              </h1>
+              <p class="text-slate-500 my-5 font-medium">
+                Our platform helps you build secure onboarding authentication
+                experiences that retain and engage your users. We build the
+                infrastructure, you can.
+              </p>
+              <ul>
+                <li
+                  id="tab-1"
+                  class="flex gap-3 items-center bg-red-200 mb-2 p-4 rounded-md cursor-pointer"
+                >
+                  <img src="./images/icons/drop.svg" alt="" />
+                  Habit building essential choose habit
+                </li>
+                <li
+                  id="tab-2"
+                  class="flex gap-3 items-center mb-2 p-4 rounded-md cursor-pointer"
+                >
+                  <img src="./images/icons/brain.svg" alt="" />
+                  Get an overview of Habit Calendars.
+                </li>
+                <li
+                  id="tab-3"
+                  class="flex gap-3 items-center mb-2 p-4 rounded-md cursor-pointer"
+                >
+                  <img src="./images/icons/timer.svg" alt="" />
+                  Start building with Habitify platform
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="lg:flex">
+            <div
+              class="lg:w-[60%] flex justify-center items-center px-5 relative"
+            >
+              <img
+                class="w-full h-auto"
+                src="./images/collaboration.png"
+                alt=""
+              />
+              <img
+                class="absolute bottom-6 left-1/2 -z-[1] -translate-x-1/2"
+                src="./images/shape.svg"
+                alt=""
+              />
+            </div>
+            <div
+              class="lg:w-[40%] flex flex-col justify-center items-start px-5 py-8"
+            >
+              <h1
+                class="lg:text-4xl text-2xl font-serif tracking-wider font-bold"
+              >
+                Accept payments any country in this whole universe
+              </h1>
+              <p class="text-slate-500 my-5 font-medium">
+                Donec sollicitudin molestie malesda. Donec sollitudin molestie
+                malesuada. Mauris pellentesque nec, egestas non nisi. Cras
+                ultricies ligula sed
+              </p>
+              <ul>
+                <li class="flex gap-3 items-center mb-2 rounded-md">
+                  <img src="./images/icons/checkmark-circle.svg" alt="" />
+                  Supporting more than 119 country world
+                </li>
+                <li class="flex gap-3 items-center mb-2 rounded-md">
+                  <img src="./images/icons/checkmark-circle.svg" alt="" />
+                  Open transaction with more than currencies
+                </li>
+                <li class="flex gap-3 items-center rounded-md">
+                  <img src="./images/icons/checkmark-circle.svg" alt="" />
+                  Customer Service with 79 languages
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="lg:flex flex-row-reverse">
+            <div class="lg:w-[60%] relative">
+              <div
+                id="showImg"
+                class="flex justify-center items-center lg:px-5"
+              >
+                <img
+                  class="w-full h-auto"
+                  src="./images/intro-thumbnail.png"
+                  alt=""
+                />
+                <button
+                  id="imgToYoutubeBtn"
+                  class="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] bg-orange-500 p-7 animate-pulse rounded-full"
+                >
+                  <img src="./images/icons/play-icon.svg" alt="" />
+                </button>
+              </div>
+              <div id="showYoutube" class="w-full h-full hidden lg:px-5">
+                <iframe
+                  class="w-full border border-blue-700 lg:h-[430px] md:h-[400px] sm:[300px] h-[250px]"
+                  src="https://www.youtube.com/embed/g3-VxLQO7do?autoplay=1"
+                  allowfullscreen=""
+                  frameborder="0"
+                ></iframe>
+              </div>
+            </div>
+            <div
+              class="lg:w-[40%] flex flex-col justify-center items-start px-5 py-8"
+            >
+              <h1
+                class="lg:text-4xl text-2xl font-serif tracking-wider font-bold"
+              >
+                Accountability that works for you
+              </h1>
+              <p class="text-slate-500 my-5 font-medium">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+                egestas Werat viverra id et aliquet. vulputate egestas
+                sollicitudin.
+              </p>
+              <button
+                class="px-8 py-4 bg-white shadow-md font-semibold text-sm rounded-full"
+              >
+                Know Us About
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="my-10">
+          <div
+            class="lg:flex justify-between items-start max-w-7xl mx-auto px-5 mb-5"
+          >
+            <div class="lg:w-[40%] lg:text-start text-center lg:mb-0 mb-5">
+              <h1
+                class="lg:text-4xl text-3xl font-bold font-serif leading-[50px]"
+              >
+                Our customers have nice things to say about us
+              </h1>
+            </div>
+            <div class="lg:w-[40%] lg:text-start text-center">
+              <p class="text-slate-500 font-medium">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+                egestas Werat viverra id et aliquet. vulputate egestas
+                sollicitudin .
+              </p>
+            </div>
+          </div>
+          <div class="max-w-7xl mx-auto p-5">
+            <div class="swiper py-5 reviews-carousel">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                  <div class="bg-white rounded-2xl shadow-sm my-10">
+                    <div class="">
+                      <div
+                        class="border-2 border-orange-400 max-w-[100px] rounded-full mx-auto translate-y-[-50%]"
+                      >
+                        <img src="./images/users/user-5.png" alt="" />
+                      </div>
+                      <div class="-mt-10 py-5 text-center px-3">
+                        <h1 class="text-2xl mb-2 font-serif font-semibold">
+                          Courtney Henry
+                        </h1>
+                        <h3 class="text-slate-600 font-semibold mb-4">
+                          microsoft corp
+                        </h3>
+                        <p class="text-slate-600 mb-4 font-medium">
+                          Our platform helps build secure onboarding authentica
+                          experiences & engage your users. We build .
+                        </p>
+                        <div
+                          class="flex items-center gap-2 justify-center mb-5"
+                        >
+                          <img src="./images/icons/star.svg" alt="" />
+                          <img src="./images/icons/star.svg" alt="" />
+                          <img src="./images/icons/star.svg" alt="" />
+                          <img src="./images/icons/star.svg" alt="" />
+                          <img src="./images/icons/star-white.svg" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="bg-white rounded-2xl shadow-sm my-10">
+                    <div class="">
+                      <div
+                        class="border-2 border-orange-400 max-w-[100px] rounded-full mx-auto translate-y-[-50%]"
+                      >
+                        <img src="./images/users/user-2.png" alt="" />
+                      </div>
+                      <div class="-mt-10 py-5 text-center px-3">
+                        <h1 class="text-2xl mb-2 font-serif font-semibold">
+                          Ronald Richards
+                        </h1>
+                        <h3 class="text-slate-600 font-semibold mb-4">
+                          meta limited
+                        </h3>
+                        <p class="text-slate-600 mb-4 font-medium">
+                          Our platform helps build secure onboarding authentica
+                          experiences & engage your users. We build .
+                        </p>
+                        <div
+                          class="flex items-center gap-2 justify-center mb-5"
+                        >
+                          <img src="./images/icons/star.svg" alt="" />
+                          <img src="./images/icons/star.svg" alt="" />
+                          <img src="./images/icons/star.svg" alt="" />
+                          <img src="./images/icons/star.svg" alt="" />
+                          <img src="./images/icons/star-white.svg" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="my-10 bg-white rounded-2xl shadow-sm">
+                    <div class="">
+                      <div
+                        class="border-2 border-orange-400 max-w-[100px] rounded-full mx-auto translate-y-[-50%]"
+                      >
+                        <img src="./images/users/user-6.png" alt="" />
+                      </div>
+                      <div class="-mt-10 py-5 text-center px-3">
+                        <h1 class="text-2xl mb-2 font-serif font-semibold">
+                          Bessie Cooper
+                        </h1>
+                        <h3 class="text-slate-600 font-semibold mb-4">
+                          apple inc ltd
+                        </h3>
+                        <p class="text-slate-600 mb-4 font-medium">
+                          Our platform helps build secure onboarding authentica
+                          experiences & engage your users. We build .
+                        </p>
+                        <div
+                          class="flex items-center gap-2 justify-center mb-5"
+                        >
+                          <img src="./images/icons/star.svg" alt="" />
+                          <img src="./images/icons/star.svg" alt="" />
+                          <img src="./images/icons/star.svg" alt="" />
+                          <img src="./images/icons/star.svg" alt="" />
+                          <img src="./images/icons/star-white.svg" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="bg-white rounded-2xl shadow-sm my-10">
+                    <div class="">
+                      <div
+                        class="border-2 border-orange-400 max-w-[100px] rounded-full mx-auto translate-y-[-50%]"
+                      >
+                        <img src="./images/users/user-5.png" alt="" />
+                      </div>
+                      <div class="-mt-10 py-5 text-center px-3">
+                        <h1 class="text-2xl mb-2 font-serif font-semibold">
+                          Courtney Henry
+                        </h1>
+                        <h3 class="text-slate-600 font-semibold mb-4">
+                          microsoft corp
+                        </h3>
+                        <p class="text-slate-600 mb-4 font-medium">
+                          Our platform helps build secure onboarding authentica
+                          experiences & engage your users. We build .
+                        </p>
+                        <div
+                          class="flex items-center gap-2 justify-center mb-5"
+                        >
+                          <img src="./images/icons/star.svg" alt="" />
+                          <img src="./images/icons/star.svg" alt="" />
+                          <img src="./images/icons/star.svg" alt="" />
+                          <img src="./images/icons/star.svg" alt="" />
+                          <img src="./images/icons/star-white.svg" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="bg-white rounded-2xl shadow-sm my-10">
+                    <div class="">
+                      <div
+                        class="border-2 border-orange-400 max-w-[100px] rounded-full mx-auto translate-y-[-50%]"
+                      >
+                        <img src="./images/users/user-2.png" alt="" />
+                      </div>
+                      <div class="-mt-10 py-5 text-center px-3">
+                        <h1 class="text-2xl mb-2 font-serif font-semibold">
+                          Ronald Richards
+                        </h1>
+                        <h3 class="text-slate-600 font-semibold mb-4">
+                          meta limited
+                        </h3>
+                        <p class="text-slate-600 mb-4 font-medium">
+                          Our platform helps build secure onboarding authentica
+                          experiences & engage your users. We build .
+                        </p>
+                        <div
+                          class="flex items-center gap-2 justify-center mb-5"
+                        >
+                          <img src="./images/icons/star.svg" alt="" />
+                          <img src="./images/icons/star.svg" alt="" />
+                          <img src="./images/icons/star.svg" alt="" />
+                          <img src="./images/icons/star.svg" alt="" />
+                          <img src="./images/icons/star-white.svg" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="my-10 bg-white rounded-2xl shadow-sm">
+                    <div class="">
+                      <div
+                        class="border-2 border-orange-400 max-w-[100px] rounded-full mx-auto translate-y-[-50%]"
+                      >
+                        <img src="./images/users/user-6.png" alt="" />
+                      </div>
+                      <div class="-mt-10 py-5 text-center px-3">
+                        <h1 class="text-2xl mb-2 font-serif font-semibold">
+                          Bessie Cooper
+                        </h1>
+                        <h3 class="text-slate-600 font-semibold mb-4">
+                          apple inc ltd
+                        </h3>
+                        <p class="text-slate-600 mb-4 font-medium">
+                          Our platform helps build secure onboarding authentica
+                          experiences & engage your users. We build .
+                        </p>
+                        <div
+                          class="flex items-center gap-2 justify-center mb-5"
+                        >
+                          <img src="./images/icons/star.svg" alt="" />
+                          <img src="./images/icons/star.svg" alt="" />
+                          <img src="./images/icons/star.svg" alt="" />
+                          <img src="./images/icons/star.svg" alt="" />
+                          <img src="./images/icons/star-white.svg" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- If we need pagination -->
+              <div
+                style="display: block"
+                class="swiper-pagination reviews-carousel-pagination !bottom-0"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="max-w-7xl mx-auto px-5 py-10">
+          <div class="lg:flex items-start bg-gradient">
+            <div class="lg:w-[55%] lg:p-20 p-10">
+              <h1
+                class="lg:text-5xl text-4xl mb-5 leading-[60px] text-white font-bold font-serif"
+              >
+                Helping teams in the world with focus
+              </h1>
+              <button
+                class="px-7 py-4 font-medium text-sm bg-white rounded-full shadow-xl hover:shadow-md "
+              >
+                Download The Theme
+              </button>
+            </div>
+            <div class="lg:w-[45%] lg:p-20 p-10 pt-0">
+              <p class="text-white">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+                egestas Werat viverra id et aliquet. vulputate egestas
+                sollicitudin .
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer style="background-color: rgb(229, 229, 229,0.5);">
+        <div class="max-w-7xl mx-auto px-5 py-10 mt-20">
+          <div class="lg:grid lg:grid-cols-4 md:grid md:grid-cols-2">
+            <div class="p-5">
+              <a class="inline-block" href="#">
+                <img class="w-full" src="./images/logo.svg" alt="" />
+              </a>
+              <p class="font-medium text-sm text-slate-500 mt-5">
+                Lorem ipsum dolor sit sed dmi amet, consectetur adipiscing. Cdo
+                tellus, sed condimentum volutpat.
+              </p>
+            </div>
+            <div class="p-5">
+              <h3 class="font-bold">Socials</h3>
+              <p class="text-slate-500 mt-8 font-medium text-sm">
+                themefisher@gmail.com
+              </p>
+              <ul class="flex items-center mt-8 gap-5">
+                <li
+                  class=""
+                >
+                  <a class="w-11 h-11 flex justify-center items-center rounded-full bg-white hover:bg-orange-500 group duration-200" href="#">
+                    <svg
+                    width="19"
+                    height="21"
+                    viewBox="0 0 20 21"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                    class="group-hover:fill-white duration-200"
+                      d="M19.1056 10.4495C19.1056 5.09642 15 0.759277 9.9327 0.759277C4.86539 0.759277 0.759766 5.09642 0.759766 10.4495C0.759766 15.2946 4.08865 19.3191 8.49018 20.0224V13.2627H6.15996V10.4495H8.49018V8.33951C8.49018 5.91696 9.85872 4.54939 11.93 4.54939C12.9657 4.54939 14.0013 4.74476 14.0013 4.74476V7.12823H12.8547C11.7081 7.12823 11.3382 7.87063 11.3382 8.65209V10.4495H13.8904L13.4835 13.2627H11.3382V20.0224C15.7398 19.3191 19.1056 15.2946 19.1056 10.4495Z"
+                      fill="#222222"
+                    ></path>
+                  </svg>
+                  </a>
+                </li>
+                <li
+                  class=""
+                >
+                  <a class="w-11 h-11 flex justify-center items-center rounded-full bg-white hover:bg-orange-500 group" href="#">
+                    <svg
+                    width="19"
+                    height="15"
+                    viewBox="0 0 19 15"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                    class="group-hover:fill-white duration-200"
+                      d="M16.3308 3.92621C17.0129 3.42889 17.6269 2.83209 18.1044 2.13583C17.4904 2.40108 16.7742 2.60001 16.0579 2.66632C16.8083 2.2353 17.354 1.5722 17.6269 0.743317C16.9447 1.14118 16.1603 1.43958 15.3758 1.60535C14.6937 0.909093 13.7728 0.51123 12.7496 0.51123C10.7714 0.51123 9.16837 2.06952 9.16837 3.99252C9.16837 4.25777 9.20248 4.52301 9.27069 4.78825C6.3034 4.62247 3.64307 3.22995 1.86952 1.14118C1.56256 1.63851 1.39202 2.2353 1.39202 2.8984C1.39202 4.09199 2.00595 5.15296 2.99504 5.7829C2.41523 5.74975 1.83541 5.61713 1.35792 5.35189V5.38504C1.35792 7.07596 2.58576 8.46847 4.22289 8.80002C3.95003 8.86633 3.60897 8.93265 3.302 8.93265C3.06326 8.93265 2.85862 8.89949 2.61987 8.86633C3.06326 10.2589 4.39342 11.2535 5.96233 11.2867C4.73449 12.215 3.19968 12.7786 1.52845 12.7786C1.22149 12.7786 0.948636 12.7455 0.675781 12.7123C2.24469 13.707 4.12057 14.2706 6.16698 14.2706C12.7496 14.2706 16.3308 8.99896 16.3308 4.39039C16.3308 4.22461 16.3308 4.09199 16.3308 3.92621Z"
+                      fill="#222222"
+                    ></path>
+                  </svg>
+                  </a>
+                </li>
+                <li
+                  class=""
+                >
+                  <a class="w-11 h-11 flex justify-center items-center rounded-full bg-white hover:bg-orange-500 group" href="#">
+                    <svg
+                    width="19"
+                    height="16"
+                    viewBox="0 0 19 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                    class="group-hover:fill-white duration-200"
+                      d="M4.56609 15.2704V5.45315H0.948103V15.2704H4.56609ZM2.73764 4.1398C3.90474 4.1398 4.83841 3.31895 4.83841 2.33394C4.83841 1.38176 3.90474 0.59375 2.73764 0.59375C1.60945 0.59375 0.675781 1.38176 0.675781 2.33394C0.675781 3.31895 1.60945 4.1398 2.73764 4.1398ZM18.0654 15.2704H18.1044V9.8857C18.1044 7.259 17.4041 5.22331 13.7472 5.22331C11.9966 5.22331 10.8295 6.04415 10.3237 6.79933H10.2848V5.45315H6.82246V15.2704H10.4404V10.411C10.4404 9.13053 10.7128 7.91568 12.5801 7.91568C14.4475 7.91568 14.4864 9.36036 14.4864 10.5095V15.2704H18.0654Z"
+                      fill="#222222"
+                    ></path>
+                  </svg>
+                  </a>
+                </li>
+                <li
+                  class=""
+                >
+                  <a class="w-11 h-11 flex justify-center items-center rounded-full bg-white hover:bg-orange-500 group" href="#">
+                    <svg
+                    width="19"
+                    height="18"
+                    viewBox="0 0 17 18"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                    class="group-hover:fill-white duration-200"
+                      d="M15.3829 10.554C15.4875 10.0381 15.5573 9.48523 15.5573 8.9324C15.5573 4.76772 12.3483 1.37701 8.40687 1.37701C7.88367 1.37701 7.36047 1.45072 6.87215 1.56129C6.20943 1.00846 5.37231 0.676758 4.50031 0.676758C2.33775 0.676758 0.59375 2.55639 0.59375 4.80458C0.59375 5.76282 0.87279 6.64735 1.39599 7.34761C1.29135 7.86359 1.22159 8.41642 1.22159 8.9324C1.22159 13.1339 4.43055 16.5246 8.37199 16.5246C8.89518 16.5246 9.41838 16.4509 9.9067 16.3404C10.5694 16.8932 11.4065 17.188 12.2785 17.188C14.4411 17.188 16.1851 15.3453 16.1851 13.0602C16.22 12.1388 15.9061 11.2543 15.3829 10.554ZM8.61615 13.9447C6.31407 13.9447 4.39567 12.8759 4.39567 11.5491C4.39567 10.9595 4.70959 10.4066 5.44207 10.4066C6.52335 10.4066 6.62799 12.0651 8.51151 12.0651C9.3835 12.0651 9.97646 11.6597 9.97646 11.1069C9.97646 10.4066 9.41838 10.2961 8.51151 10.0749C6.34895 9.48523 4.39567 9.2641 4.39567 6.86849C4.39567 4.65716 6.45359 3.84633 8.19759 3.84633C10.116 3.84633 12.0693 4.65716 12.0693 5.91024C12.0693 6.53679 11.6856 7.08962 11.0229 7.08962C10.0462 7.08962 10.0113 5.83653 8.40687 5.83653C7.49999 5.83653 6.94191 6.09452 6.94191 6.68421C6.94191 7.38446 7.67439 7.45818 9.34862 7.90044C10.7787 8.23214 12.5227 8.85869 12.5227 10.7383C12.5227 12.9128 10.5345 13.9447 8.61615 13.9447Z"
+                      fill="#222222"
+                    ></path>
+                  </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="p-5">
+              <h3 class="font-bold">Quick Links</h3>
+              <ul class="mt-8 text-sm space-y-2 font-medium text-slate-500">
+                <li><a class="hover:text-red-600 hover:underline" href="#">About</a></li>
+                <li><a class="hover:text-red-600 hover:underline" href="#">Category</a></li>
+                <li><a class="hover:text-red-600 hover:underline" href="#">Testimonial</a></li>
+                <li><a class="hover:text-red-600 hover:underline" href="#">Contact</a></li>
+              </ul>
+            </div>
+            <div class="p-5">
+              <h3 class="font-bold">Location & Contact</h3>
+              <div class="mt-8">
+                <p class="text-slate-500 text-sm font-medium">
+                  2118 Thornridge Cir. Syracuse, Connecticut 35624
+                </p>
+                <p class="text-slate-500 text-sm font-medium">(704) 555-0127</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="border-t border-slate-200">
+          <p class="py-8 px-5 w-fit mx-auto text-sm font-medium text-slate-600">
+            Designed And Developed by <a href="#">Themefisher</a>
+          </p>
+        </div>
+      </footer>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Anta&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    counter-reset: section;
+  }
+  
+  .row-no::before {
+    counter-increment: section;
+    content:counter(section);
+  }
